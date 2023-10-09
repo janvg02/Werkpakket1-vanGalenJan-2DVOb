@@ -1,4 +1,21 @@
 @use "base" as *;
+
+.nav{
+  .logo{
+      color: $color-primary;
+  }
+  .nav-components{
+    li{
+      margin:10px 30px ;
+    }
+    display: flex;
+    flex-direction: row;
+    color: $color-light;
+    list-style-type: none;
+    font-family: $font-nunito;
+  }
+}
+
 .header {
   .logo {
     @include flexLayout;
@@ -13,8 +30,9 @@
   }
   .brand {
     @include flexLayout;
+
   }
-  .main-name{
+  .header-name{
     font-family: $font-nunito;
     font-size: 50px;
     color: $color-secondary;
@@ -24,5 +42,75 @@
     font-size: 18px;
     color: $color-secondary;
     @include textStyles;
+    margin-bottom: 30px;
+  }
+  .main-heading{
+    font-family: $font-pixelify;
+    font-size: 80px;
+    font-weight: 400;
+    color: $color-primary;
+    margin: 30px 0;
+  }
+  .sub-heading{
+    font-family: $font-josefinSans;
+    font-size: 20px;
+    font-weight: 400;
+    color: $color-secondary;
+    margin-bottom: 50px;
+  }
+  .header-button{
+    width: 150px;
+    height: 50px;
+    font-family: $font-josefinSans;
+    font-variant: all-small-caps;
+    letter-spacing: 1px;
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px solid $color-primary ;
+    outline: none;
+    cursor: pointer;
+  }
+  .header-button:hover{
+     background-color: $color-primary;
+     color: $color-secondary;
+     transition: all .4s;
+   }
+  .product-main{
+    margin-top: 20%;
+    font-family: $font-josefinSans;
+    color: $color-light;
+    font-weight: normal;
+  }
+  .arrow-down{
+    color: $color-primary;
+    @include textStyles;
+    margin: 0 auto;
+    padding-top: 5%;
+     }
+}
+
+.main{
+  background: linear-gradient(rgba($color-light, 0.0), rgba($color-light, 0.2), rgba($color-light, 0.4), rgba($color-light, 0.6));
+  .product{
+    @include textStyles;
+  }
+  .product-name{
+    font-family: $font-josefinSans;
+    font-size: x-large;
+    font-weight: 700;
+    color: $color-light;
+  }
+  .product-14-pro{
+  width: 20%;
+  height: auto;
+  }
+  .product-price{
+    color: red;
+    font-family: $font-nunito;
+    font-size: x-large;
+    span{
+      text-decoration: line-through;
+      color: $color-black;
+    }
   }
 }

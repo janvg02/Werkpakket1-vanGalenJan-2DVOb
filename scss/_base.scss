@@ -4,10 +4,11 @@
 }
 $color-light: #f9F9F9;
 $color-black: #000;
-$color-primary: #003459;
+$color-grey: #565656;
+$color-primary: #3b83bd;
 $color-secondary: #bbb;
 
-$font-dancingScript: 'Dancing Script', cursive;
+$font-pixelify: 'Pixelify sans', sans-serif ;
 $font-josefinSans: 'Josefin Sans', sans-serif;
 $font-nunito: 'Nunito', sans-serif;
 
@@ -23,6 +24,9 @@ $font-nunito: 'Nunito', sans-serif;
   text-align: center;
 
 }
-body{
-  background-color: $color-light;
+@mixin centerText{
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
 }
