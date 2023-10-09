@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "name": "werkpakket1-vangalenjan-2dvob",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

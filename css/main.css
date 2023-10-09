@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9F9F9;
+}
+
+.header .logo {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  font-size: 70px;
+  color: #003459;
+  text-decoration: none;
+}
+.header a {
+  display: block;
+  width: 110px;
+  height: 110px;
+}
+.header .brand {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+}
+.header .main-name {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  color: #bbb;
+}
+.header .sub-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: #bbb;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)) center no-repeat;
+  background-size: cover;
+}
+
+.header {
+  position: relative;
+  color: #000;
+}
+.header .brand {
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=main.css.map */
