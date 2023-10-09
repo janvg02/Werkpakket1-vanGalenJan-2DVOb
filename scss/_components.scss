@@ -1,12 +1,27 @@
 @use "base" as *;
 
-.nav{
-  .logo{
-      color: $color-primary;
-  }
+//navbar startpagina//
+.start-nav{
   .nav-components{
     li{
       margin:10px 30px ;
+      .logo{
+      color: $color-primary;
+    }
+      a{
+        text-decoration: none;
+        width: 20px;
+        height: auto;
+        padding: 10px;
+        color: $color-light;
+      }
+      a:hover{
+        color: $color-primary;
+        background-color: $color-secondary;
+        border: 1px solid $color-primary ;
+        transition: all .4s;
+
+      }
     }
     display: flex;
     flex-direction: row;
@@ -14,19 +29,16 @@
     list-style-type: none;
     font-family: $font-nunito;
   }
+
 }
 
-.header {
+//header startpagina//
+.start-header {
   .logo {
     @include flexLayout;
     font-size: 70px;
     color: $color-primary;
     text-decoration: none;
-  }
-  a{
-    display: block;
-    width: 110px;
-    height: 110px;
   }
   .brand {
     @include flexLayout;
@@ -35,14 +47,15 @@
   .header-name{
     font-family: $font-nunito;
     font-size: 50px;
-    color: $color-secondary;
+    color: $color-light;
   }
   .sub-name{
     font-family: $font-josefinSans;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bolder;
     color: $color-secondary;
-    @include textStyles;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: center;
   }
   .main-heading{
     font-family: $font-pixelify;
@@ -64,19 +77,20 @@
     font-family: $font-josefinSans;
     font-variant: all-small-caps;
     letter-spacing: 1px;
-    color: $color-primary;
+    color: $color-light;
     background-color: transparent;
-    border: 1px solid $color-primary ;
+    border: 1px solid $color-secondary ;
     outline: none;
     cursor: pointer;
   }
   .header-button:hover{
      background-color: $color-primary;
-     color: $color-secondary;
+     color: $color-light;
+    border: 1px solid $color-primary;
      transition: all .4s;
    }
   .product-main{
-    margin-top: 20%;
+    margin: 10% 0;
     font-family: $font-josefinSans;
     color: $color-light;
     font-weight: normal;
@@ -84,13 +98,18 @@
   .arrow-down{
     color: $color-primary;
     @include textStyles;
-    margin: 0 auto;
-    padding-top: 5%;
+    horiz-align: center;
+    font-size: x-large;
      }
 }
 
-.main{
-  background: linear-gradient(rgba($color-light, 0.0), rgba($color-light, 0.2), rgba($color-light, 0.4), rgba($color-light, 0.6));
+//main startpagina//
+
+.start-main{
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   .product{
     @include textStyles;
   }
@@ -100,9 +119,10 @@
     font-weight: 700;
     color: $color-light;
   }
-  .product-14-pro{
-  width: 20%;
+  .product-pro{
+  width: 40%;
   height: auto;
+    padding: 20px;
   }
   .product-price{
     color: red;
@@ -110,7 +130,22 @@
     font-size: x-large;
     span{
       text-decoration: line-through;
-      color: $color-black;
+      color: $color-secondary;
     }
+  }
+}
+
+//footer startpagina//
+.start-footer{
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  .start-gegevenslijst, .start-adres{
+    font-family: $font-josefinSans;
+    font-size: large;
+    list-style-type: none;
+    @include textStyles;
+    color: $color-light;
   }
 }

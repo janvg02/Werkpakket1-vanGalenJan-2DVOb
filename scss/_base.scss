@@ -18,7 +18,7 @@ $font-nunito: 'Nunito', sans-serif;
   vertical-align: center;
 }
 @mixin textStyles{
-  font-weight: 300;
+  $font-weight-value: 300;
   letter-spacing: 2px;
   font-variant: all-small-caps;
   text-align: center;

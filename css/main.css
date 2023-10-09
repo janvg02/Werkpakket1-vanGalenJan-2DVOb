@@ -3,21 +3,34 @@
   padding: 0;
 }
 
-.nav .logo {
-  color: #3b83bd;
-}
-.nav .nav-components {
+.start-nav .nav-components {
   display: flex;
   flex-direction: row;
   color: #f9F9F9;
   list-style-type: none;
   font-family: "Nunito", sans-serif;
 }
-.nav .nav-components li {
+.start-nav .nav-components li {
   margin: 10px 30px;
 }
+.start-nav .nav-components li .logo {
+  color: #3b83bd;
+}
+.start-nav .nav-components li a {
+  text-decoration: none;
+  width: 20px;
+  height: auto;
+  padding: 10px;
+  color: #f9F9F9;
+}
+.start-nav .nav-components li a:hover {
+  color: #3b83bd;
+  background-color: #bbb;
+  border: 1px solid #3b83bd;
+  transition: all 0.4s;
+}
 
-.header .logo {
+.start-header .logo {
   display: flex;
   horiz-align: center;
   vertical-align: center;
@@ -25,133 +38,142 @@
   color: #3b83bd;
   text-decoration: none;
 }
-.header a {
-  display: block;
-  width: 110px;
-  height: 110px;
-}
-.header .brand {
+.start-header .brand {
   display: flex;
   horiz-align: center;
   vertical-align: center;
 }
-.header .header-name {
+.start-header .header-name {
   font-family: "Nunito", sans-serif;
   font-size: 50px;
-  color: #bbb;
+  color: #f9F9F9;
 }
-.header .sub-name {
+.start-header .sub-name {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bolder;
   color: #bbb;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-variant: all-small-caps;
+  margin-bottom: 20px;
   text-align: center;
-  margin-bottom: 30px;
 }
-.header .main-heading {
+.start-header .main-heading {
   font-family: "Pixelify sans", sans-serif;
   font-size: 80px;
   font-weight: 400;
   color: #3b83bd;
   margin: 30px 0;
 }
-.header .sub-heading {
+.start-header .sub-heading {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #bbb;
   margin-bottom: 50px;
 }
-.header .header-button {
+.start-header .header-button {
   width: 150px;
   height: 50px;
   font-family: "Josefin Sans", sans-serif;
   font-variant: all-small-caps;
   letter-spacing: 1px;
-  color: #3b83bd;
+  color: #f9F9F9;
   background-color: transparent;
-  border: 1px solid #3b83bd;
+  border: 1px solid #bbb;
   outline: none;
   cursor: pointer;
 }
-.header .header-button:hover {
+.start-header .header-button:hover {
   background-color: #3b83bd;
-  color: #bbb;
+  color: #f9F9F9;
+  border: 1px solid #3b83bd;
   transition: all 0.4s;
 }
-.header .product-main {
-  margin-top: 20%;
+.start-header .product-main {
+  margin: 10% 0;
   font-family: "Josefin Sans", sans-serif;
   color: #f9F9F9;
   font-weight: normal;
 }
-.header .arrow-down {
+.start-header .arrow-down {
   color: #3b83bd;
-  font-weight: 300;
   letter-spacing: 2px;
   font-variant: all-small-caps;
   text-align: center;
-  margin: 0 auto;
-  padding-top: 5%;
+  horiz-align: center;
+  font-size: x-large;
 }
 
-.main {
-  background: linear-gradient(rgba(249, 249, 249, 0), rgba(249, 249, 249, 0.2), rgba(249, 249, 249, 0.4), rgba(249, 249, 249, 0.6));
+.start-main {
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.main .product {
-  font-weight: 300;
+.start-main .product {
   letter-spacing: 2px;
   font-variant: all-small-caps;
   text-align: center;
 }
-.main .product-name {
+.start-main .product-name {
   font-family: "Josefin Sans", sans-serif;
   font-size: x-large;
   font-weight: 700;
   color: #f9F9F9;
 }
-.main .product-14-pro {
-  width: 20%;
+.start-main .product-pro {
+  width: 40%;
   height: auto;
+  padding: 20px;
 }
-.main .product-price {
+.start-main .product-price {
   color: red;
   font-family: "Nunito", sans-serif;
   font-size: x-large;
 }
-.main .product-price span {
+.start-main .product-price span {
   text-decoration: line-through;
-  color: #000;
+  color: #bbb;
 }
 
-body {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../assets/phone-bg.jpeg");
+.start-footer {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.start-footer .start-gegevenslijst, .start-footer .start-adres {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: large;
+  list-style-type: none;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+  color: #f9F9F9;
+}
+
+.start-body {
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("../assets/phone-bg.jpeg");
   background-size: cover;
 }
 
-nav {
+.start-nav {
   padding: 20px 20px;
 }
 
-header {
+.start-header {
   width: 100%;
   height: 100vh;
   background-size: cover;
-}
-
-.header {
   position: relative;
   color: #000;
 }
-.header .brand {
+.start-header .brand {
   position: absolute;
   left: 50%;
   top: 15%;
   transform: translate(-50%, -50%);
 }
-.header .header-banner {
+.start-header .header-banner {
   position: absolute;
   left: 50%;
   top: 15%;
