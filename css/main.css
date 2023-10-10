@@ -26,7 +26,7 @@
 .start-nav .nav-components li a:hover {
   color: #3b83bd;
   background-color: #bbb;
-  border: 1px solid #3b83bd;
+  border-radius: 2px;
   transition: all 0.4s;
 }
 
@@ -71,8 +71,8 @@
   margin-bottom: 50px;
 }
 .start-header .header-button {
-  width: 150px;
-  height: 50px;
+  width: 200px;
+  height: 75px;
   font-family: "Josefin Sans", sans-serif;
   font-variant: all-small-caps;
   letter-spacing: 1px;
