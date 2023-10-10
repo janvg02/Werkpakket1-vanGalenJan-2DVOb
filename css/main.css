@@ -30,6 +30,36 @@
   transition: all 0.4s;
 }
 
+.login-nav, .overzicht-nav {
+  background-color: #bbb;
+}
+.login-nav .nav-components, .overzicht-nav .nav-components {
+  display: flex;
+  flex-direction: row;
+  color: #f9F9F9;
+  list-style-type: none;
+  font-family: "Nunito", sans-serif;
+}
+.login-nav .nav-components li, .overzicht-nav .nav-components li {
+  margin: 10px 30px;
+}
+.login-nav .nav-components li .logo, .overzicht-nav .nav-components li .logo {
+  color: #3b83bd;
+}
+.login-nav .nav-components li a, .overzicht-nav .nav-components li a {
+  text-decoration: none;
+  width: 20px;
+  height: auto;
+  padding: 10px;
+  color: #f9F9F9;
+}
+.login-nav .nav-components li a:hover, .overzicht-nav .nav-components li a:hover {
+  color: #3b83bd;
+  background-color: #bbb;
+  border-radius: 2px;
+  transition: all 0.4s;
+}
+
 .start-header .logo {
   display: flex;
   horiz-align: center;
@@ -81,11 +111,13 @@
   border: 1px solid #bbb;
   outline: none;
   cursor: pointer;
+  border-radius: 2px;
 }
 .start-header .header-button:hover {
   background-color: #3b83bd;
   color: #f9F9F9;
   border: 1px solid #3b83bd;
+  border-radius: 2px;
   transition: all 0.4s;
 }
 .start-header .product-main {
@@ -135,6 +167,67 @@
   color: #bbb;
 }
 
+.overzicht-main .item {
+  width: 33.33%;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+  padding: 5% 0;
+}
+.overzicht-main .item .item-image {
+  width: 100%;
+  height: 95%;
+  object-fit: contain;
+  padding: 10px 0 5px 0;
+}
+.overzicht-main .item .item-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 131, 189, 0.5);
+  color: #f9F9F9;
+  z-index: 10;
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  flex-direction: column;
+}
+.overzicht-main .item .item-overlay .item-overlay-titel {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+}
+.overzicht-main .item .item-overlay .item-overlay-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+}
+.overzicht-main .item .item-overlay .item-overlay-button {
+  width: 150px;
+  height: 40px;
+  color: #3b83bd;
+  background-color: #f9F9F9;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #3b83bd;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.overzicht-main .item:hover .item-overlay {
+  left: 0;
+  transition: left 0.7s;
+}
+
 .start-footer {
   padding: 5%;
   display: flex;
@@ -156,7 +249,7 @@
   background-size: cover;
 }
 
-.start-nav {
+.start-nav, .login-nav, .overzicht-nav {
   padding: 20px 20px;
 }
 
@@ -180,6 +273,11 @@
   transform: translate(-50%, -50%);
   text-align: center;
   margin-top: 25%;
+}
+
+.overzicht-lijst .overzicht-items {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=main.css.map */

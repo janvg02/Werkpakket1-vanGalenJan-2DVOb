@@ -30,3 +30,32 @@ $font-nunito: 'Nunito', sans-serif;
   top: 15%;
   transform: translate(-50%, -50%);
 }
+@mixin navbarStyle{
+  .nav-components{
+    li{
+      margin:10px 30px ;
+      .logo{
+        color: $color-primary;
+      }
+      a{
+        text-decoration: none;
+        width: 20px;
+        height: auto;
+        padding: 10px;
+        color: $color-light;
+      }
+      a:hover{
+        color: $color-primary;
+        background-color: $color-secondary;
+        border-radius: 2px;
+        transition: all .4s;
+
+      }
+    }
+    display: flex;
+    flex-direction: row;
+    color: $color-light;
+    list-style-type: none;
+    font-family: $font-nunito;
+  }
+}

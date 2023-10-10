@@ -4,7 +4,8 @@
   background-size: cover;
 
 }
-.start-nav{
+
+.start-nav, .login-nav, .overzicht-nav{
   padding: 20px 20px ;
 }
 
@@ -23,4 +24,11 @@
     margin-top: 25%;
   }
 
+}
+
+.overzicht-lijst{
+  .overzicht-items{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
