@@ -7,7 +7,6 @@
 
 .login-nav, .overzicht-nav{
    @include navbarStyle;
-   background-color: $color-secondary;
  }
 
 
@@ -106,7 +105,7 @@
     padding: 20px;
   }
   .product-price{
-    color: red;
+    color: indianred;
     font-family: $font-nunito;
     font-size: x-large;
     span{
@@ -115,62 +114,98 @@
     }
   }
 }
+.overzicht-body{
+  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-light, 0.2)), url("../assets/iphone-bg-2.jpeg");
+  background-size: cover;
 
-.overzicht-main{
-  .item{
-    width: 33.33%;
-    height: 25vw;
-    position: relative;
-    overflow: hidden;
-    padding: 5% 0;
-    .item-image{
-      width: 100%;
-      height: 95%;
-      object-fit: contain;
-      padding: 10px 0 5px 0;
-    }
-    .item-overlay{
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($color-primary, 0.5);
+  .overzicht-main{
+    .top-overzicht-main{
+    @include flexLayout;
+    @include centerText;
+    flex-direction: column;
+    margin: 12% 0;
+      .top-overzicht-titel{
+      text-align: center;
+      font-family: $font-josefinSans;
+      font-size: 50px;
+      color: $color-primary;
+      }
+      .top-overzicht-text{
+      text-align: center;
+      font-family: $font-nunito;
+      font-size: 30px;
       color: $color-light;
-      z-index: 10;
-      @include flexLayout;
-      flex-direction: column;
-      .item-overlay-titel{
-        font-family: $font-nunito;
-        font-size: 50px;
-        @include textStyles;
-      }
-      .item-overlay-text{
-        font-family: $font-josefinSans;
-        font-size: 30px;
-        margin-bottom: 30px;
-        @include textStyles;
-      }
-      .item-overlay-button{
-        width: 150px;
-        height: 40px;
-        color: $color-primary;
-        background-color: $color-light;
-        font-family: $font-josefinSans;
-        font-size: 14px;
-        font-weight: bold;
-        border: 1px solid $color-primary;
-        border-radius: 30px;
-        outline: none;
-        cursor: pointer;
-        margin: 0 auto;
+      font-variant: all-small-caps;
       }
     }
-  }
-  .item:hover{
-    .item-overlay{
-      left: 0;
-      transition: left 0.7s;
+    .overzicht-lijst{
+    margin-top: 25%;
+    background-color: rgba($color-secondary,0.9);
+      .overzicht-items{
+        .item{
+        width: 33.33%;
+        height: 25vw;
+        position: relative;
+        overflow: hidden;
+        padding: 5% 0;
+          .item-image{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          padding: 10px 0 5px 0;
+          }
+          .item-overlay{
+            position: absolute;
+            top: 40%;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color-primary, 0.5);
+            color: $color-light;
+            @include flexLayout;
+            flex-direction: column;
+            .product-price{
+              color: $color-light;
+              @include textStyles;
+              font-size: x-large;
+              font-family: $font-nunito;
+              span{
+                color: red;
+              }
+            }
+            .item-overlay-titel{
+            font-family: $font-nunito;
+            font-size: 40px;
+            @include textStyles;
+            }
+            .item-overlay-text{
+            font-family: $font-josefinSans;
+            font-size: 30px;
+            @include textStyles;
+            }
+            .item-overlay-button{
+            width: 150px;
+            height: 40px;
+            color: $color-primary;
+            background-color: $color-light;
+            font-family: $font-josefinSans;
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid $color-primary;
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
+              margin: 0 auto;
+            }
+          }
+        }
+        .item:hover{
+          .item-overlay{
+          left: 0;
+          transition: left 0.7s;
+          }
+        }
+      }
     }
   }
 }

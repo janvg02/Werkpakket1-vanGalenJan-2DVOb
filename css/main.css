@@ -30,9 +30,6 @@
   transition: all 0.4s;
 }
 
-.login-nav, .overzicht-nav {
-  background-color: #bbb;
-}
 .login-nav .nav-components, .overzicht-nav .nav-components {
   display: flex;
   flex-direction: row;
@@ -158,7 +155,7 @@
   padding: 20px;
 }
 .start-main .product-price {
-  color: red;
+  color: indianred;
   font-family: "Nunito", sans-serif;
   font-size: x-large;
 }
@@ -167,49 +164,90 @@
   color: #bbb;
 }
 
-.overzicht-main .item {
+.overzicht-body {
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(249, 249, 249, 0.2)), url("../assets/iphone-bg-2.jpeg");
+  background-size: cover;
+}
+.overzicht-body .overzicht-main .top-overzicht-main {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  margin: 12% 0;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .top-overzicht-titel {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  color: #3b83bd;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .top-overzicht-text {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  color: #f9F9F9;
+  font-variant: all-small-caps;
+}
+.overzicht-body .overzicht-main .overzicht-lijst {
+  margin-top: 25%;
+  background-color: rgba(187, 187, 187, 0.9);
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item {
   width: 33.33%;
   height: 25vw;
   position: relative;
   overflow: hidden;
   padding: 5% 0;
 }
-.overzicht-main .item .item-image {
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-image {
   width: 100%;
-  height: 95%;
+  height: 100%;
   object-fit: contain;
   padding: 10px 0 5px 0;
 }
-.overzicht-main .item .item-overlay {
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay {
   position: absolute;
-  top: 0;
+  top: 40%;
   left: -100%;
   width: 100%;
   height: 100%;
   background-color: rgba(59, 131, 189, 0.5);
   color: #f9F9F9;
-  z-index: 10;
   display: flex;
   horiz-align: center;
   vertical-align: center;
   flex-direction: column;
 }
-.overzicht-main .item .item-overlay .item-overlay-titel {
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .product-price {
+  color: #f9F9F9;
+  letter-spacing: 2px;
+  font-variant: all-small-caps;
+  text-align: center;
+  font-size: x-large;
   font-family: "Nunito", sans-serif;
-  font-size: 50px;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .product-price span {
+  color: red;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .item-overlay-titel {
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
   letter-spacing: 2px;
   font-variant: all-small-caps;
   text-align: center;
 }
-.overzicht-main .item .item-overlay .item-overlay-text {
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .item-overlay-text {
   font-family: "Josefin Sans", sans-serif;
   font-size: 30px;
-  margin-bottom: 30px;
   letter-spacing: 2px;
   font-variant: all-small-caps;
   text-align: center;
 }
-.overzicht-main .item .item-overlay .item-overlay-button {
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .item-overlay-button {
   width: 150px;
   height: 40px;
   color: #3b83bd;
@@ -223,7 +261,7 @@
   cursor: pointer;
   margin: 0 auto;
 }
-.overzicht-main .item:hover .item-overlay {
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item:hover .item-overlay {
   left: 0;
   transition: left 0.7s;
 }
