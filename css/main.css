@@ -3,54 +3,27 @@
   padding: 0;
 }
 
-.start-nav .nav-components {
+.start-nav .nav-components, .login-nav .nav-components, .overzicht-nav .nav-components, .detail-nav .nav-components {
   display: flex;
   flex-direction: row;
   color: #f9F9F9;
   list-style-type: none;
   font-family: "Nunito", sans-serif;
 }
-.start-nav .nav-components li {
+.start-nav .nav-components li, .login-nav .nav-components li, .overzicht-nav .nav-components li, .detail-nav .nav-components li {
   margin: 10px 30px;
 }
-.start-nav .nav-components li .logo {
+.start-nav .nav-components li .logo, .login-nav .nav-components li .logo, .overzicht-nav .nav-components li .logo, .detail-nav .nav-components li .logo {
   color: #3b83bd;
 }
-.start-nav .nav-components li a {
+.start-nav .nav-components li a, .login-nav .nav-components li a, .overzicht-nav .nav-components li a, .detail-nav .nav-components li a {
   text-decoration: none;
   width: 20px;
   height: auto;
   padding: 10px;
   color: #f9F9F9;
 }
-.start-nav .nav-components li a:hover {
-  color: #3b83bd;
-  background-color: #bbb;
-  border-radius: 2px;
-  transition: all 0.4s;
-}
-
-.login-nav .nav-components, .overzicht-nav .nav-components {
-  display: flex;
-  flex-direction: row;
-  color: #f9F9F9;
-  list-style-type: none;
-  font-family: "Nunito", sans-serif;
-}
-.login-nav .nav-components li, .overzicht-nav .nav-components li {
-  margin: 10px 30px;
-}
-.login-nav .nav-components li .logo, .overzicht-nav .nav-components li .logo {
-  color: #3b83bd;
-}
-.login-nav .nav-components li a, .overzicht-nav .nav-components li a {
-  text-decoration: none;
-  width: 20px;
-  height: auto;
-  padding: 10px;
-  color: #f9F9F9;
-}
-.login-nav .nav-components li a:hover, .overzicht-nav .nav-components li a:hover {
+.start-nav .nav-components li a:hover, .login-nav .nav-components li a:hover, .overzicht-nav .nav-components li a:hover, .detail-nav .nav-components li a:hover {
   color: #3b83bd;
   background-color: #bbb;
   border-radius: 2px;
@@ -192,6 +165,27 @@
   color: #f9F9F9;
   font-variant: all-small-caps;
 }
+.overzicht-body .overzicht-main .top-overzicht-main .filters {
+  width: 100%;
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .filters .filter-item .filter {
+  border: none;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .filters .filter-item legend {
+  font-family: "Josefin Sans", sans-serif;
+  color: #3b83bd;
+  font-size: x-large;
+}
+.overzicht-body .overzicht-main .top-overzicht-main .filters .filter-item .filter-text {
+  font-family: "Nunito", sans-serif;
+  color: #f9F9F9;
+}
 .overzicht-body .overzicht-main .overzicht-lijst {
   margin-top: 25%;
   background-color: rgba(187, 187, 187, 0.9);
@@ -261,9 +255,29 @@
   cursor: pointer;
   margin: 0 auto;
 }
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .item-overlay-button .detail-link {
+  text-decoration: none;
+  color: #3b83bd;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item .item-overlay .item-overlay-button .detail-link:hover {
+  color: #bbb;
+}
 .overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item:hover .item-overlay {
   left: 0;
   transition: left 0.7s;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .paginatie {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #3b83bd;
+  font-size: large;
+  padding: 5%;
+}
+.overzicht-body .overzicht-main .overzicht-lijst .paginatie span {
+  text-decoration: underline;
 }
 
 .start-footer {
@@ -287,7 +301,7 @@
   background-size: cover;
 }
 
-.start-nav, .login-nav, .overzicht-nav {
+.start-nav, .login-nav, .overzicht-nav, .detail-nav {
   padding: 20px 20px;
 }
 

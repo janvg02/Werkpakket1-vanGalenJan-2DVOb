@@ -27,33 +27,32 @@
         <p class="top-overzicht-text">Telefoons van hoge kwaliteit</p>
         <div class="filters">
         <div class="filter-item">
-            <fieldset>
+            <fieldset class="filter">
                 <legend>Prijsklasse</legend>
-                <div>
+                <div class="filter-text">
                     <input type="checkbox" id="cheap" name="cheap" checked />
                     <label for="cheap">529.99 - 749.99</label>
                 </div>
 
-                <div>
+                <div class="filter-text">
                     <input type="checkbox" id="expensive" name="expensive" />
                     <label for="expensive">> 749.99</label>
                 </div>
             </fieldset>
         </div>
         <div class="filter-item">
-            <fieldset>
+            <fieldset class="filter">
                 <legend>Opslag</legend>
-
-                <div>
+                <div class="filter-text">
                     <input type="checkbox" id="64" name="64" checked />
                     <label for="64">64gb</label>
                 </div>
 
-                <div>
+                <div class="filter-text">
                     <input type="checkbox" id="128" name="128" />
                     <label for="128">128gb</label>
                 </div>
-                <div>
+                <div class="filter-text">
                     <input type="checkbox" id="256" name="256" />
                     <label for="256">256gb</label>
                 </div>
@@ -69,7 +68,7 @@
                     <h1 class="item-overlay-titel">Iphone 15</h1>
                     <p class="item-overlay-text">Apple</p>
                     <p class="item-overlay-text">256gb</p>
-                    <button class="item-overlay-button">Details</button>
+                    <button class="item-overlay-button"><a class="detail-link" href="detailpagina.html">Details</a></button>
                     <p class="product-price"><span class="price-sale">€749</span><br>€999 </p>
                 </div>
                 <img src="assets/iphone-15.webp" alt="15 " class="item-image">
@@ -132,8 +131,24 @@
                 </div>
                 <img src="assets/iphone-12-mini.webp" alt="15 " class="item-image">
             </div>
+
         </div>
+        <div class="paginatie">
+        <h3><< <span>1</span> 2 3 4 5 ... >></h3>
+    </div>
     </section>
 </main>
+<footer class="start-footer">
+    <ul class="start-gegevenslijst">
+        <li class="start-gegeven">Jan van Galen</li>
+        <li class="start-gegeven">janvg02@gmail.com</li>
+        <li class="start-gegeven">PhoneLab</li>
+    </ul>
+    <ul class="start-adres">
+        <li class="start-adres">Elfde-liniestraat 22</li>
+        <li class="start-adres">3500</li>
+        <li class="start-adres">Hasselt</li>
+    </ul>
+</footer>
 </body>
 </html>
