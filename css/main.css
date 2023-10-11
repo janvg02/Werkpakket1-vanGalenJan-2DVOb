@@ -280,6 +280,45 @@
   text-decoration: underline;
 }
 
+.detail-body .detail-main {
+  width: 75%;
+  margin: 0 auto;
+}
+.detail-body .detail-main .brand {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+.detail-body .detail-main .brand .header-name {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  color: #3b83bd;
+}
+.detail-body .detail-main .detail-iphone {
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  flex-direction: row;
+  margin: 5%;
+}
+.detail-body .detail-main .detail-iphone .detail-img-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 5%;
+}
+.detail-body .detail-main .detail-iphone .detail-img-small img {
+  scale: 50%;
+}
+.detail-body .detail-main .detail-iphone .detail-img-big {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  width: auto;
+}
+
 .start-footer {
   padding: 5%;
   display: flex;
