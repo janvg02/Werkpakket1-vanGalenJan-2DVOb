@@ -5,7 +5,8 @@
 
 .start-nav,.login-nav, .overzicht-nav, .detail-nav {
    @include navbarStyle;
- }
+  }
+
 
 
 //header//
@@ -252,6 +253,7 @@
 .detail-body{
   .detail-main{
     width: 75%;
+    height: 50%;
     margin: 0 auto;
     .brand {
       @include flexLayout;
@@ -271,20 +273,19 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-right: 5%;
         img{
-          scale: 50%;
+          scale: 70%;
         }
       }
       .detail-img-big{
         display: flex;
         justify-content: center;
-        height: 50%;
-        width: auto;
+        height: 30%;
+        img{
+          scale: 50%;
+        }
       }
-
     }
-
   }
 }
 
