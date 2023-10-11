@@ -30,7 +30,11 @@
   transition: all 0.4s;
 }
 
-.start-header .logo {
+.start-body {
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("../assets/phone-bg.jpeg");
+  background-size: cover;
+}
+.start-body .start-header .logo {
   display: flex;
   horiz-align: center;
   vertical-align: center;
@@ -38,17 +42,17 @@
   color: #3b83bd;
   text-decoration: none;
 }
-.start-header .brand {
+.start-body .start-header .brand {
   display: flex;
   horiz-align: center;
   vertical-align: center;
 }
-.start-header .header-name {
+.start-body .start-header .header-name {
   font-family: "Nunito", sans-serif;
   font-size: 50px;
   color: #f9F9F9;
 }
-.start-header .sub-name {
+.start-body .start-header .sub-name {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   font-weight: bolder;
@@ -56,21 +60,21 @@
   margin-bottom: 20px;
   text-align: center;
 }
-.start-header .main-heading {
+.start-body .start-header .main-heading {
   font-family: "Pixelify sans", sans-serif;
   font-size: 80px;
   font-weight: 400;
   color: #3b83bd;
   margin: 30px 0;
 }
-.start-header .sub-heading {
+.start-body .start-header .sub-heading {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #bbb;
   margin-bottom: 50px;
 }
-.start-header .header-button {
+.start-body .start-header .header-button {
   width: 200px;
   height: 75px;
   font-family: "Josefin Sans", sans-serif;
@@ -83,20 +87,20 @@
   cursor: pointer;
   border-radius: 2px;
 }
-.start-header .header-button:hover {
+.start-body .start-header .header-button:hover {
   background-color: #3b83bd;
   color: #f9F9F9;
   border: 1px solid #3b83bd;
   border-radius: 2px;
   transition: all 0.4s;
 }
-.start-header .product-main {
+.start-body .start-header .product-main {
   margin: 10% 0;
   font-family: "Josefin Sans", sans-serif;
   color: #f9F9F9;
   font-weight: normal;
 }
-.start-header .arrow-down {
+.start-body .start-header .arrow-down {
   color: #3b83bd;
   letter-spacing: 2px;
   font-variant: all-small-caps;
@@ -280,29 +284,22 @@
   text-decoration: underline;
 }
 
+.detail-body {
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(249, 249, 249, 0.2)), url("../assets/iphone-bg-2.jpeg");
+  background-size: cover;
+}
 .detail-body .detail-main {
-  width: 75%;
-  height: 50%;
+  width: 100%;
+  height: 40%;
   margin: 0 auto;
-}
-.detail-body .detail-main .brand {
-  display: flex;
-  horiz-align: center;
-  vertical-align: center;
-  justify-content: center;
-  margin-top: 5%;
-}
-.detail-body .detail-main .brand .header-name {
-  font-family: "Nunito", sans-serif;
-  font-size: 50px;
-  color: #3b83bd;
 }
 .detail-body .detail-main .detail-iphone {
   display: flex;
   horiz-align: center;
   vertical-align: center;
   flex-direction: row;
-  margin: 5%;
+  background-color: rgba(187, 187, 187, 0.9);
+  justify-content: center;
 }
 .detail-body .detail-main .detail-iphone .detail-img-small {
   display: flex;
@@ -320,6 +317,29 @@
 .detail-body .detail-main .detail-iphone .detail-img-big img {
   scale: 50%;
 }
+.detail-body .detail-main .detail-iphone .detail-specificaties {
+  display: flex;
+  margin: auto 0;
+}
+.detail-body .detail-main .detail-iphone .detail-specificaties .detail-list {
+  font-family: "Josefin Sans", sans-serif;
+  word-spacing: 2px;
+}
+.detail-body .detail-main .detail-iphone .detail-specificaties .detail-list .detail-list-item {
+  list-style-type: none;
+  margin-bottom: 3%;
+}
+.detail-body .detail-main .detail-iphone .detail-specificaties .detail-list .detail-list-item h1 {
+  color: #3b83bd;
+}
+.detail-body .detail-main .detail-iphone .detail-specificaties .detail-list .detail-list-item-listed {
+  margin-bottom: 3%;
+}
+
+.login-body {
+  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("../assets/phone-bg.jpeg");
+  background-size: cover;
+}
 
 .start-footer {
   padding: 5%;
@@ -335,11 +355,6 @@
   font-variant: all-small-caps;
   text-align: center;
   color: #f9F9F9;
-}
-
-.start-body {
-  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("../assets/phone-bg.jpeg");
-  background-size: cover;
 }
 
 .start-nav, .login-nav, .overzicht-nav, .detail-nav {

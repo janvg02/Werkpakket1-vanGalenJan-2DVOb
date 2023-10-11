@@ -1,15 +1,17 @@
 @use "base" as *;
 
-//navbar//
-
+//NAVBAR//
 
 .start-nav,.login-nav, .overzicht-nav, .detail-nav {
    @include navbarStyle;
   }
 
+//HEADER_MAIN//
+.start-body{
+  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
+  background-size: cover;
 
 
-//header//
 .start-header {
   .logo {
     @include flexLayout;
@@ -81,9 +83,10 @@
     font-size: x-large;
      }
 }
+}
+//MAIN//
 
-//main//
-
+//STARTPAGINA_MAIN//
 .start-main{
   padding-bottom: 10%;
   display: flex;
@@ -113,6 +116,9 @@
     }
   }
 }
+
+//OVERZICHT_MAIN
+
 .overzicht-body{
   background: linear-gradient(rgba($color-grey, 0.4), rgba($color-light, 0.2)), url("../assets/iphone-bg-2.jpeg");
   background-size: cover;
@@ -250,25 +256,21 @@
     }
   }
 }
+
+//DETAIL_MAIN//
+
 .detail-body{
+  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-light, 0.2)), url("../assets/iphone-bg-2.jpeg");
+  background-size: cover;
   .detail-main{
-    width: 75%;
-    height: 50%;
+    width: 100%;
+    height: 40%;
     margin: 0 auto;
-    .brand {
-      @include flexLayout;
-      justify-content: center;
-      margin-top: 5%;
-      .header-name{
-      font-family: $font-nunito;
-      font-size: 50px;
-      color: $color-primary;
-    }
-    }
     .detail-iphone{
       @include flexLayout;
       flex-direction: row;
-      margin: 5% ;
+      background-color: rgba($color-secondary, 0.9);
+      justify-content: center;
       .detail-img-small{
         display: flex;
         flex-direction: column;
@@ -285,11 +287,37 @@
           scale: 50%;
         }
       }
+      .detail-specificaties{
+          display: flex;
+          margin: auto 0;
+         .detail-list{
+           font-family: $font-josefinSans;
+           word-spacing: 2px;
+           .detail-list-item{
+             list-style-type: none;
+             margin-bottom: 3%;
+             h1{
+               color: $color-primary;
+             }
+           }
+          .detail-list-item-listed{
+            margin-bottom: 3%;
+          }
+         }
+       }
     }
+
   }
 }
 
-//footer//
+//LOGIN_MAIN//
+
+.login-body{
+    background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
+    background-size: cover;
+}
+
+//FOOTER//
 .start-footer{
   padding: 5%;
   display: flex;

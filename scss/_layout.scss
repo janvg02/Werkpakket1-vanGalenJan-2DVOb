@@ -1,9 +1,5 @@
 @use "base" as *;
-.start-body{
-  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
-  background-size: cover;
 
-}
 
 .start-nav, .login-nav, .overzicht-nav, .detail-nav{
   padding: 20px 20px ;
