@@ -339,6 +339,23 @@
 .login-body {
   background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(86, 86, 86, 0.6), rgba(86, 86, 86, 0.8), #565656), url("../assets/phone-bg.jpeg");
   background-size: cover;
+  height: 100%;
+}
+.login-body .login-main .login-profile {
+  display: block;
+  margin: 0 auto;
+}
+.login-body .login-main .login-profile .login-gegevens {
+  align-content: center;
+  padding: 15%;
+}
+.login-body .login-main .login-profile .login-gegevens .login-text {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10%;
+}
+.login-body .login-main .login-profile .login-gegevens .login-text #user-name, .login-body .login-main .login-profile .login-gegevens .login-text #password {
+  width: 50%;
 }
 
 .start-footer {

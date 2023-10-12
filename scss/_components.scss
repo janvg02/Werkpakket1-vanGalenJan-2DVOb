@@ -315,7 +315,27 @@
 .login-body{
     background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
     background-size: cover;
-}
+  height: 100%;
+  .login-main{
+    .login-profile{
+      display: block;
+      margin: 0 auto;
+      .login-gegevens{
+        align-content: center;
+        padding: 15%;
+        .login-text{
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 10%;
+          #user-name, #password{
+            width: 50%;
+          }
+        }
+        }
+      }
+    }
+  }
+
 
 //FOOTER//
 .start-footer{
