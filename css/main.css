@@ -120,23 +120,23 @@
   font-variant: all-small-caps;
   text-align: center;
 }
-.start-main .product-name {
+.start-main-name {
   font-family: "Josefin Sans", sans-serif;
   font-size: x-large;
   font-weight: 700;
   color: #f9F9F9;
 }
-.start-main .product-pro {
+.start-main-pro {
   width: 40%;
   height: auto;
   padding: 20px;
 }
-.start-main .product-price {
+.start-main-price {
   color: indianred;
   font-family: "Nunito", sans-serif;
   font-size: x-large;
 }
-.start-main .product-price span {
+.start-main-price span {
   text-decoration: line-through;
   color: #bbb;
 }
@@ -170,10 +170,10 @@
   font-variant: all-small-caps;
 }
 .overzicht-body .overzicht-main .top-overzicht-main .filters {
-  width: 100%;
   display: flex;
   horiz-align: center;
   vertical-align: center;
+  width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 10%;
@@ -342,20 +342,38 @@
   height: 100%;
 }
 .login-body .login-main .login-profile {
-  display: block;
-  margin: 0 auto;
-}
-.login-body .login-main .login-profile .login-gegevens {
-  align-content: center;
-  padding: 15%;
-}
-.login-body .login-main .login-profile .login-gegevens .login-text {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 10%;
+  flex-direction: row;
 }
-.login-body .login-main .login-profile .login-gegevens .login-text #user-name, .login-body .login-main .login-profile .login-gegevens .login-text #password {
-  width: 50%;
+.login-body .login-main .login-profile .login-gegevens, .login-body .login-main .login-profile .pa {
+  padding: 10%;
+}
+.login-body .login-main .login-profile .login-gegevens .login-title, .login-body .login-main .login-profile .pa .login-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #3b83bd;
+  font-size: xx-large;
+  margin-bottom: 2%;
+  align-items: center;
+}
+.login-body .login-main .login-profile .login-gegevens .login-text, .login-body .login-main .login-profile .pa .login-text {
+  font-family: "Nunito", sans-serif;
+  color: #f9F9F9;
+  display: flex;
+  horiz-align: center;
+  vertical-align: center;
+  flex-direction: column;
+  padding-bottom: 20%;
+}
+.login-body .login-main .login-profile .login-gegevens .login-text #user-name, .login-body .login-main .login-profile .login-gegevens .login-text #password, .login-body .login-main .login-profile .pa .login-text #user-name, .login-body .login-main .login-profile .pa .login-text #password {
+  width: 20%;
+  margin-bottom: 5%;
+}
+.login-body .login-main .login-profile .login-gegevens .login-text .submit, .login-body .login-main .login-profile .pa .login-text .submit {
+  font-family: "Nunito", sans-serif;
+  color: #3b83bd;
+  background-color: #bbb;
+  width: 20%;
+  border: none;
 }
 
 .start-footer {

@@ -3,85 +3,85 @@
 //NAVBAR//
 
 .start-nav,.login-nav, .overzicht-nav, .detail-nav {
-   @include navbarStyle;
-  }
+  @include navbarStyle;
+}
 
 //HEADER_MAIN//
-.start-body{
+.start{
+&-body{
   background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
   background-size: cover;
+  .start-header {
+    .logo {
+      @include flexLayout;
+      font-size: 70px;
+      color: $color-primary;
+      text-decoration: none;
+    }
+    .brand {
+      @include flexLayout;
 
-
-.start-header {
-  .logo {
-    @include flexLayout;
-    font-size: 70px;
-    color: $color-primary;
-    text-decoration: none;
+    }
+    .header-name{
+      font-family: $font-nunito;
+      font-size: 50px;
+      color: $color-light;
+    }
+    .sub-name{
+      font-family: $font-josefinSans;
+      font-size: 20px;
+      font-weight: bolder;
+      color: $color-secondary;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .main-heading{
+      font-family: $font-pixelify;
+      font-size: 80px;
+      font-weight: 400;
+      color: $color-primary;
+      margin: 30px 0;
+    }
+    .sub-heading{
+      font-family: $font-josefinSans;
+      font-size: 20px;
+      font-weight: 400;
+      color: $color-secondary;
+      margin-bottom: 50px;
+    }
+    .header-button{
+      width: 200px;
+      height: 75px;
+      font-family: $font-josefinSans;
+      font-variant: all-small-caps;
+      letter-spacing: 1px;
+      color: $color-light;
+      background-color: transparent;
+      border: 1px solid $color-secondary ;
+      outline: none;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+    .header-button:hover{
+      background-color: $color-primary;
+      color: $color-light;
+      border: 1px solid $color-primary;
+      border-radius: 2px;
+      transition: all .4s;
+    }
+    .product-main{
+      margin: 10% 0;
+      font-family: $font-josefinSans;
+      color: $color-light;
+      font-weight: normal;
+    }
+    .arrow-down{
+      color: $color-primary;
+      @include textStyles;
+      horiz-align: center;
+      font-size: x-large;
+    }
   }
-  .brand {
-    @include flexLayout;
-
-  }
-  .header-name{
-    font-family: $font-nunito;
-    font-size: 50px;
-    color: $color-light;
-  }
-  .sub-name{
-    font-family: $font-josefinSans;
-    font-size: 20px;
-    font-weight: bolder;
-    color: $color-secondary;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .main-heading{
-    font-family: $font-pixelify;
-    font-size: 80px;
-    font-weight: 400;
-    color: $color-primary;
-    margin: 30px 0;
-  }
-  .sub-heading{
-    font-family: $font-josefinSans;
-    font-size: 20px;
-    font-weight: 400;
-    color: $color-secondary;
-    margin-bottom: 50px;
-  }
-  .header-button{
-    width: 200px;
-    height: 75px;
-    font-family: $font-josefinSans;
-    font-variant: all-small-caps;
-    letter-spacing: 1px;
-    color: $color-light;
-    background-color: transparent;
-    border: 1px solid $color-secondary ;
-    outline: none;
-    cursor: pointer;
-    border-radius: 2px;
-  }
-  .header-button:hover{
-     background-color: $color-primary;
-     color: $color-light;
-    border: 1px solid $color-primary;
-    border-radius: 2px;
-     transition: all .4s;
-   }
-  .product-main{
-    margin: 10% 0;
-    font-family: $font-josefinSans;
-    color: $color-light;
-    font-weight: normal;
-  }
-  .arrow-down{
-    color: $color-primary;
-    @include textStyles;
-    horiz-align: center;
-    font-size: x-large;
-     }
 }
 }
 //MAIN//
@@ -95,18 +95,18 @@
   .product{
     @include textStyles;
   }
-  .product-name{
+  &-name{
     font-family: $font-josefinSans;
     font-size: x-large;
     font-weight: 700;
     color: $color-light;
   }
-  .product-pro{
-  width: 40%;
-  height: auto;
+  &-pro{
+    width: 40%;
+    height: auto;
     padding: 20px;
   }
-  .product-price{
+  &-price{
     color: indianred;
     font-family: $font-nunito;
     font-size: x-large;
@@ -125,28 +125,29 @@
 
   .overzicht-main{
     .top-overzicht-main{
-    @include flexLayout;
-    @include centerText;
-    flex-direction: column;
-    margin: 12% 0;
+      @include flexLayout;
+      @include centerText;
+      flex-direction: column;
+      margin: 12% 0;
       .top-overzicht-titel{
-      text-align: center;
-      font-family: $font-josefinSans;
-      font-size: 50px;
-      color: $color-primary;
+        text-align: center;
+        font-family: $font-josefinSans;
+        font-size: 50px;
+        color: $color-primary;
       }
       .top-overzicht-text{
-      text-align: center;
-      font-family: $font-nunito;
-      font-size: 30px;
-      color: $color-light;
-      font-variant: all-small-caps;
+        text-align: center;
+        font-family: $font-nunito;
+        font-size: 30px;
+        color: $color-light;
+        font-variant: all-small-caps;
       }
       .filters{
-          width: 100%;
-          @include flexLayout;
-          flex-direction: row;
-          justify-content: space-evenly;
+        @include flexLayout;
+        width: 100%;
+
+        flex-direction: row;
+        justify-content: space-evenly;
         margin-top: 10%;
         .filter-item{
           .filter{
@@ -163,33 +164,27 @@
             color: $color-light;
           }
         }
-    }
-
       }
+
+    }
     .overzicht-lijst{
-    margin-top: 25%;
-    background-color: rgba($color-secondary,0.9);
+      margin-top: 25%;
+      background-color: rgba($color-secondary,0.9);
       .overzicht-items{
         .item{
-        width: 33.33%;
-        height: 25vw;
-        position: relative;
-        overflow: hidden;
-        padding: 5% 0;
+          width: 33.33%;
+          height: 25vw;
+          position: relative;
+          overflow: hidden;
+          padding: 5% 0;
           .item-image{
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-          padding: 10px 0 5px 0;
-          }
-          .item-overlay{
-            position: absolute;
-            top: 40%;
-            left: -100%;
             width: 100%;
             height: 100%;
-            background-color: rgba($color-primary, 0.5);
-            color: $color-light;
+            object-fit: contain;
+            padding: 10px 0 5px 0;
+          }
+          .item-overlay{
+            @include overlay;
             @include flexLayout;
             flex-direction: column;
             .product-price{
@@ -202,14 +197,14 @@
               }
             }
             .item-overlay-titel{
-            font-family: $font-nunito;
-            font-size: 40px;
-            @include textStyles;
+              font-family: $font-nunito;
+              font-size: 40px;
+              @include textStyles;
             }
             .item-overlay-text{
-            font-family: $font-josefinSans;
-            font-size: 30px;
-            @include textStyles;
+              font-family: $font-josefinSans;
+              font-size: 30px;
+              @include textStyles;
             }
             .item-overlay-button{
               .detail-link{
@@ -219,40 +214,26 @@
               .detail-link:hover{
                 color: $color-secondary;
               }
-            width: 150px;
-            height: 40px;
-            color: $color-primary;
-            background-color: $color-light;
-            font-family: $font-josefinSans;
-            font-size: 14px;
-            font-weight: bold;
-            border: 1px solid $color-primary;
-            border-radius: 30px;
-            outline: none;
-            cursor: pointer;
-              margin: 0 auto;
+              @include itemOverlay;
             }
           }
         }
         .item:hover{
           .item-overlay{
-          left: 0;
-          transition: left 0.7s;
+            left: 0;
+            transition: left 0.7s;
           }
         }
       }
       .paginatie{
-         @include flexLayout;
+        @include flexLayout;
         justify-content: center;
-        font-family: $font-josefinSans;
-        color: $color-primary;
-        font-size: large;
-        padding: 5%;
-         span{
-           text-decoration: underline;
-         }
+       @include fontStyle;
+        span{
+          text-decoration: underline;
+        }
 
-       }
+      }
     }
   }
 }
@@ -288,23 +269,23 @@
         }
       }
       .detail-specificaties{
-          display: flex;
-          margin: auto 0;
-         .detail-list{
-           font-family: $font-josefinSans;
-           word-spacing: 2px;
-           .detail-list-item{
-             list-style-type: none;
-             margin-bottom: 3%;
-             h1{
-               color: $color-primary;
-             }
-           }
+        display: flex;
+        margin: auto 0;
+        .detail-list{
+          font-family: $font-josefinSans;
+          word-spacing: 2px;
+          .detail-list-item{
+            list-style-type: none;
+            margin-bottom: 3%;
+            h1{
+              color: $color-primary;
+            }
+          }
           .detail-list-item-listed{
             margin-bottom: 3%;
           }
-         }
-       }
+        }
+      }
     }
 
   }
@@ -312,30 +293,47 @@
 
 //LOGIN_MAIN//
 
-.login-body{
-    background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
-    background-size: cover;
+.login{
+&-body{
+  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
+  background-size: cover;
   height: 100%;
   .login-main{
     .login-profile{
-      display: block;
-      margin: 0 auto;
-      .login-gegevens{
-        align-content: center;
-        padding: 15%;
-        .login-text{
-          display: flex;
-          flex-direction: column;
-          padding-bottom: 10%;
-          #user-name, #password{
-            width: 50%;
-          }
+        display: flex;
+      flex-direction: row;
+      .login-gegevens, .pa{
+        padding: 10%;
+        .login-title {
+          font-family: $font-josefinSans;
+          color: $color-primary;
+          font-size: xx-large;
+          margin-bottom: 2%;
+          align-items: center;
         }
+        .login-text{
+          font-family: $font-nunito;
+          color: $color-light;
+          @include flexLayout;
+          flex-direction: column;
+          padding-bottom: 20%;
+          #user-name, #password{
+            width: 20%;
+            margin-bottom: 5%;
+          }
+          .submit{
+            font-family: $font-nunito;
+            color: $color-primary;
+            background-color: $color-secondary;
+            width: 20%;
+            border: none;
+          }
         }
       }
     }
   }
-
+}
+}
 
 //FOOTER//
 .start-footer{
@@ -351,8 +349,6 @@
     color: $color-light;
   }
 }
-
-
 
 
 
