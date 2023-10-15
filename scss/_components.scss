@@ -17,12 +17,9 @@
       color: $color-primary;
       text-decoration: none;
     }
-
-    .brand {
-      @include flexLayout;
-
+    .header-banner{
+      margin-top: 15%;
     }
-
     .header-name {
       font-family: $font-nunito;
       font-size: 50px;
@@ -133,7 +130,6 @@
 .overzicht-body{
   background: linear-gradient(rgba($color-grey, 0.8), rgba($color-light, 0.6)), url("../assets/iphone-bg-2.jpeg");
   background-size: cover;
-
   .overzicht-main{
     .top-overzicht-main{
       @include flexLayout;
@@ -370,18 +366,13 @@
 
 //RESPONSIVE//
 
-@media screen and (max-width: 415px) and (min-width: 414px){
-    .start-header {
-      height: max-content;
+@media screen and (max-width: 415px) and (min-width: 413px){
+    .start-header{
+      display: flex;
+      flex-wrap: wrap;
+      height: 100vh;
+      width: auto;
     }
-  .overzicht-main{
-    display: flex;
-    flex-direction: column;
-  }
-  .overzicht-lijst{
-    display: flex;
-    margin-top: 50%;
-  }
 }
 
 

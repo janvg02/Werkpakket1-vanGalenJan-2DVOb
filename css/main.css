@@ -42,10 +42,8 @@
   color: #3b83bd;
   text-decoration: none;
 }
-.start-body .start-header .brand {
-  display: flex;
-  horiz-align: center;
-  vertical-align: center;
+.start-body .start-header .header-banner {
+  margin-top: 15%;
 }
 .start-body .start-header .header-name {
   font-family: "Nunito", sans-serif;
@@ -398,17 +396,12 @@
   color: #f9F9F9;
 }
 
-@media screen and (max-width: 415px) and (min-width: 414px) {
+@media screen and (max-width: 415px) and (min-width: 413px) {
   .start-header {
-    height: max-content;
-  }
-  .overzicht-main {
     display: flex;
-    flex-direction: column;
-  }
-  .overzicht-lijst {
-    display: flex;
-    margin-top: 50%;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: auto;
   }
 }
 .start-nav, .login-nav, .overzicht-nav, .detail-nav {
