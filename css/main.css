@@ -396,12 +396,15 @@
   color: #f9F9F9;
 }
 
-@media screen and (max-width: 415px) and (min-width: 413px) {
-  .start-header {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
-    width: auto;
+@media screen and (min-width: 413px) and (max-width: 415px) {
+  .start-body {
+    background: none;
+  }
+  .start-body .start-header .header-banner {
+    margin-top: 2%;
+  }
+  .login-body {
+    background: none;
   }
 }
 .start-nav, .login-nav, .overzicht-nav, .detail-nav {
@@ -414,12 +417,6 @@
   background-size: cover;
   position: relative;
   color: #000;
-}
-.start-header .brand {
-  position: absolute;
-  left: 50%;
-  top: 15%;
-  transform: translate(-50%, -50%);
 }
 .start-header .header-banner {
   position: absolute;
