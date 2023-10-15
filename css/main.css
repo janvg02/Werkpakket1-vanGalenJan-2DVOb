@@ -120,29 +120,29 @@
   font-variant: all-small-caps;
   text-align: center;
 }
-.start-main-name {
+.start-main .product-name {
   font-family: "Josefin Sans", sans-serif;
   font-size: x-large;
   font-weight: 700;
   color: #f9F9F9;
 }
-.start-main-pro {
+.start-main .product-pro {
   width: 40%;
   height: auto;
   padding: 20px;
 }
-.start-main-price {
-  color: indianred;
+.start-main .product-price {
+  color: #f9F9F9;
   font-family: "Nunito", sans-serif;
   font-size: x-large;
 }
-.start-main-price span {
+.start-main .product-price span {
   text-decoration: line-through;
   color: #bbb;
 }
 
 .overzicht-body {
-  background: linear-gradient(rgba(86, 86, 86, 0.4), rgba(249, 249, 249, 0.2)), url("../assets/iphone-bg-2.jpeg");
+  background: linear-gradient(rgba(86, 86, 86, 0.8), rgba(249, 249, 249, 0.6)), url("../assets/iphone-bg-2.jpeg");
   background-size: cover;
 }
 .overzicht-body .overzicht-main .top-overzicht-main {
@@ -154,7 +154,7 @@
   top: 15%;
   transform: translate(-50%, -50%);
   flex-direction: column;
-  margin: 12% 0;
+  margin: 5% 0;
 }
 .overzicht-body .overzicht-main .top-overzicht-main .top-overzicht-titel {
   text-align: center;
@@ -192,7 +192,6 @@
 }
 .overzicht-body .overzicht-main .overzicht-lijst {
   margin-top: 25%;
-  background-color: rgba(187, 187, 187, 0.9);
 }
 .overzicht-body .overzicht-main .overzicht-lijst .overzicht-items .item {
   width: 33.33%;
@@ -298,6 +297,7 @@
   horiz-align: center;
   vertical-align: center;
   flex-direction: row;
+  flex-wrap: nowrap;
   background-color: rgba(187, 187, 187, 0.9);
   justify-content: center;
 }
@@ -343,19 +343,21 @@
 }
 .login-body .login-main .login-profile {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
-.login-body .login-main .login-profile .login-gegevens, .login-body .login-main .login-profile .pa {
-  padding: 10%;
+.login-body .login-main .login-profile .login-gegevens {
+  padding: 8%;
+  background-color: rgba(86, 86, 86, 0.9);
+  border-radius: 30px;
 }
-.login-body .login-main .login-profile .login-gegevens .login-title, .login-body .login-main .login-profile .pa .login-title {
+.login-body .login-main .login-profile .login-gegevens .login-title {
   font-family: "Josefin Sans", sans-serif;
   color: #3b83bd;
   font-size: xx-large;
   margin-bottom: 2%;
   align-items: center;
 }
-.login-body .login-main .login-profile .login-gegevens .login-text, .login-body .login-main .login-profile .pa .login-text {
+.login-body .login-main .login-profile .login-gegevens .login-text {
   font-family: "Nunito", sans-serif;
   color: #f9F9F9;
   display: flex;
@@ -364,16 +366,20 @@
   flex-direction: column;
   padding-bottom: 20%;
 }
-.login-body .login-main .login-profile .login-gegevens .login-text #user-name, .login-body .login-main .login-profile .login-gegevens .login-text #password, .login-body .login-main .login-profile .pa .login-text #user-name, .login-body .login-main .login-profile .pa .login-text #password {
-  width: 20%;
+.login-body .login-main .login-profile .login-gegevens .login-text .login-title {
+  margin-top: 10%;
+}
+.login-body .login-main .login-profile .login-gegevens .login-text #user-name, .login-body .login-main .login-profile .login-gegevens .login-text #password, .login-body .login-main .login-profile .login-gegevens .login-text #e-mail-confirm {
+  width: 50%;
   margin-bottom: 5%;
 }
-.login-body .login-main .login-profile .login-gegevens .login-text .submit, .login-body .login-main .login-profile .pa .login-text .submit {
+.login-body .login-main .login-profile .login-gegevens .login-text .submit {
   font-family: "Nunito", sans-serif;
   color: #3b83bd;
-  background-color: #bbb;
+  background-color: #f9F9F9;
   width: 20%;
   border: none;
+  padding: 2% 0;
 }
 
 .start-footer {
@@ -392,6 +398,19 @@
   color: #f9F9F9;
 }
 
+@media screen and (max-width: 415px) and (min-width: 414px) {
+  .start-header {
+    height: max-content;
+  }
+  .overzicht-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .overzicht-lijst {
+    display: flex;
+    margin-top: 50%;
+  }
+}
 .start-nav, .login-nav, .overzicht-nav, .detail-nav {
   padding: 20px 20px;
 }

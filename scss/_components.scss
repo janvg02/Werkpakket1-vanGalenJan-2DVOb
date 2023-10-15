@@ -7,9 +7,8 @@
 }
 
 //HEADER_MAIN//
-.start{
-&-body{
-  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8),rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
+.start-body {
+  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-grey, 0.6), rgba($color-grey, 0.8), rgba($color-grey, 1.0)), url("../assets/phone-bg.jpeg");
   background-size: cover;
   .start-header {
     .logo {
@@ -18,16 +17,19 @@
       color: $color-primary;
       text-decoration: none;
     }
+
     .brand {
       @include flexLayout;
 
     }
-    .header-name{
+
+    .header-name {
       font-family: $font-nunito;
       font-size: 50px;
       color: $color-light;
     }
-    .sub-name{
+
+    .sub-name {
       font-family: $font-josefinSans;
       font-size: 20px;
       font-weight: bolder;
@@ -35,21 +37,24 @@
       margin-bottom: 20px;
       text-align: center;
     }
-    .main-heading{
+
+    .main-heading {
       font-family: $font-pixelify;
       font-size: 80px;
       font-weight: 400;
       color: $color-primary;
       margin: 30px 0;
     }
-    .sub-heading{
+
+    .sub-heading {
       font-family: $font-josefinSans;
       font-size: 20px;
       font-weight: 400;
       color: $color-secondary;
       margin-bottom: 50px;
     }
-    .header-button{
+
+    .header-button {
       width: 200px;
       height: 75px;
       font-family: $font-josefinSans;
@@ -57,33 +62,39 @@
       letter-spacing: 1px;
       color: $color-light;
       background-color: transparent;
-      border: 1px solid $color-secondary ;
+      border: 1px solid $color-secondary;
       outline: none;
       cursor: pointer;
       border-radius: 2px;
     }
-    .header-button:hover{
+
+    .header-button:hover {
       background-color: $color-primary;
       color: $color-light;
       border: 1px solid $color-primary;
       border-radius: 2px;
       transition: all .4s;
     }
-    .product-main{
+
+    .product-main {
       margin: 10% 0;
       font-family: $font-josefinSans;
       color: $color-light;
       font-weight: normal;
     }
-    .arrow-down{
+
+    .arrow-down {
       color: $color-primary;
       @include textStyles;
       horiz-align: center;
       font-size: x-large;
     }
   }
+
+
 }
-}
+
+
 //MAIN//
 
 //STARTPAGINA_MAIN//
@@ -94,7 +105,6 @@
   justify-content: space-evenly;
   .product{
     @include textStyles;
-  }
   &-name{
     font-family: $font-josefinSans;
     font-size: x-large;
@@ -107,7 +117,7 @@
     padding: 20px;
   }
   &-price{
-    color: indianred;
+    color: $color-light;
     font-family: $font-nunito;
     font-size: x-large;
     span{
@@ -115,12 +125,13 @@
       color: $color-secondary;
     }
   }
+  }
 }
 
 //OVERZICHT_MAIN
 
 .overzicht-body{
-  background: linear-gradient(rgba($color-grey, 0.4), rgba($color-light, 0.2)), url("../assets/iphone-bg-2.jpeg");
+  background: linear-gradient(rgba($color-grey, 0.8), rgba($color-light, 0.6)), url("../assets/iphone-bg-2.jpeg");
   background-size: cover;
 
   .overzicht-main{
@@ -128,7 +139,7 @@
       @include flexLayout;
       @include centerText;
       flex-direction: column;
-      margin: 12% 0;
+      margin: 5% 0;
       .top-overzicht-titel{
         text-align: center;
         font-family: $font-josefinSans;
@@ -169,7 +180,6 @@
     }
     .overzicht-lijst{
       margin-top: 25%;
-      background-color: rgba($color-secondary,0.9);
       .overzicht-items{
         .item{
           width: 33.33%;
@@ -250,6 +260,7 @@
     .detail-iphone{
       @include flexLayout;
       flex-direction: row;
+      flex-wrap: nowrap;
       background-color: rgba($color-secondary, 0.9);
       justify-content: center;
       .detail-img-small{
@@ -301,9 +312,12 @@
   .login-main{
     .login-profile{
         display: flex;
-      flex-direction: row;
-      .login-gegevens, .pa{
-        padding: 10%;
+      justify-content: center;
+
+      .login-gegevens{
+        padding: 8%;
+        background-color: rgba($color-grey, 0.9);
+        border-radius: 30px;
         .login-title {
           font-family: $font-josefinSans;
           color: $color-primary;
@@ -317,16 +331,20 @@
           @include flexLayout;
           flex-direction: column;
           padding-bottom: 20%;
-          #user-name, #password{
-            width: 20%;
+          .login-title{
+            margin-top: 10%;
+          }
+          #user-name, #password, #e-mail-confirm{
+            width: 50%;
             margin-bottom: 5%;
           }
           .submit{
             font-family: $font-nunito;
             color: $color-primary;
-            background-color: $color-secondary;
+            background-color: $color-light;
             width: 20%;
             border: none;
+            padding: 2% 0;
           }
         }
       }
@@ -350,5 +368,20 @@
   }
 }
 
+//RESPONSIVE//
+
+@media screen and (max-width: 415px) and (min-width: 414px){
+    .start-header {
+      height: max-content;
+    }
+  .overzicht-main{
+    display: flex;
+    flex-direction: column;
+  }
+  .overzicht-lijst{
+    display: flex;
+    margin-top: 50%;
+  }
+}
 
 
